@@ -1,0 +1,118 @@
+/* Style the Cards container */
+.Cards {
+    min-height: 100vh;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+/* Table Styling */
+
+/* Ensure the table stays on top of the overlay */
+.Cards table {
+    position: relative;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px; /* Creates spacing between cards */
+}
+
+.time {
+    font-weight: bold;
+    color: #666;
+    vertical-align: middle;
+}
+
+/* Card Styling */
+.Card {
+    /* Semi-transparent white */
+  background: rgba(255, 255, 255, 0.85); 
+  
+  /* This creates a "frosted glass" effect */
+  backdrop-filter: blur(8px); 
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  
+  transition: all 0.3s ease;
+}
+
+.Card:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+}
+
+.Card h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.Card h6 {
+    margin: 5px 0 0;
+    font-weight: 400;
+    color: #777;
+}
+
+/* Color Variants */
+
+/* Web Development - Warm Yellow */
+.Card.yellow { 
+    border-top: 5px solid #f7df1e; 
+    background-color: #fffdf0; 
+}
+
+/* Systems - High Energy Red */
+.Card.red { 
+    border-top: 5px solid #de3e35; 
+    background-color: #fff5f5; 
+}
+
+/* General Purpose - Professional Blue */
+.Card.blue { 
+    border-top: 5px solid #007acc; 
+    background-color: #f0f7ff; 
+}
+
+/* Data/Scripting - Growth Green */
+.Card.green { 
+    border-top: 5px solid #2e7d32; 
+    background-color: #f1f8f1; 
+}
+
+/* Mobile Development - Creative Purple */
+.Card.purple { 
+    border-top: 5px solid #8e44ad; 
+    background-color: #f9f4fb; 
+}
+
+.doc-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.doc-button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.card-logo {
+    /*  container size for each image */
+    width: 120px;
+    height: 120px;
+
+    /* contain property */
+    /* ensures the image is resized to fit the 120x120 box 
+       without being cropped or stretched. */
+    object-fit: contain;
+
+    /* Layout and Spacing */
+    display: block;
+    margin: 0 auto 12px auto; /* Centers the image and adds bottom spacing */
+}
